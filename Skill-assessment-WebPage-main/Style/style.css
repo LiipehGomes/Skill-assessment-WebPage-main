@@ -1,0 +1,300 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr{
+  width: 90%;
+  height: 1px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  header{
+    background-color: rgba(34,33,32,255);
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .logo{
+    width: 50%;
+    padding-left: 40px;
+  }
+  .logo img {
+    max-width: 200px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding-left: 100px;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links li a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-links li a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13pt;
+  }
+
+  
+  section{
+    width: 97%;
+    height: auto;
+    outline: hidden;
+    margin: 20px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .lastbooks{
+    width: 80vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .book-cards{
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 7px 7px 15px 0 rgba(0,0,0,0.49);
+  }
+  .book-cards {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .book-cards:hover {
+    border-color: #007bff;
+  }
+  
+  .book-cards:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  .book-name h3, .author p, .publisher p, .link-book a {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .book-cards:hover .book-name h3,
+  .book-cards:hover .author p,
+  .book-cards:hover .publisher p,
+  .book-cards:hover .link-book a {
+    opacity: 1;
+  }
+    
+
+  .book-cape{
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom: solid 1px;
+  }
+
+  .book-cape img{
+    max-width: 200px;
+    max-height: 250px;
+    width: 200px;
+    height: 250px;
+  }
+  .book-cards:hover .book-cape img {
+    transform: rotate(5deg);
+  }
+  img:hover{
+    z-index: 100;
+  }
+
+  .book-name{
+    font-size: 14pt;
+    text-align: center;
+    padding-bottom: 3px;
+  }
+
+  .author{
+    padding-left: 7px;
+    padding-bottom: 3px;
+  }
+
+  .publisher{
+    padding-left: 7px;
+    padding-bottom: 5px;
+  }
+
+  .link-book{
+    margin-top: 3px;
+    align-items: end;
+    text-align: center;
+    background-color: black;
+  }
+
+  .link-book a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .section-desc{
+    width: 100%;
+    height: auto;
+  }
+  .section-desc h2{
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+article{
+  width: 100vw;
+  height: auto;
+}
+
+/* article starts here */
+article h3{
+  font-size: 25pt;
+  padding: 50px;
+  text-align: center;
+}
+
+.article-contend{
+  display: flex;
+  padding-top: 30px;
+}
+
+.img-article{
+  width: 40%;
+  height: auto;
+}
+
+.img-article img{
+  max-width: 400px;
+  max-height: 400px;
+  width: 400px;
+  height: 400px;
+  padding-left: 40px;
+}
+
+
+.text-article{
+  width: 60%;
+}
+
+.text-article p{
+  font-size: 15pt;
+  text-transform: capitalize;
+  padding-left: -10px;
+}
+.benefits-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  font-size: 18pt;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+}
+
+/* Footer part starts here */
+
+footer{
+  background-color: #353440;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer-container{
+  padding: 15px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+}
+
+.inf-a-side{
+  width: 49%;
+  height: auto;
+  text-align: center;
+  padding-top: 20px;
+  color: fff;
+}
+
+.inf-a-side p{
+  font-size: 18pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.line{
+  width: 2px;
+  background-color: #fff;
+}
+
+.inf-b-side{
+  width: 49%;
+  height: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.inf-b-side p{
+  font-size: 19pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.copyright{
+  text-align: center;
+  color: #fff;
+}
+
+.socialmedia{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.socialmedia img{
+  max-width: 75px;
+  max-height: 75px;
+  width: 75px;
+  height: 75px;
+}
+
+.header-stand{
+  width: 100%  !important;
+  height: 100% !important;
+}
+
+.footer-stand{
+  width: 100%  !important;
+  height: 270px !important;
+}
