@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ #header-iframe{
+  width: 100% !important;
+  height: 100% !important;
+}
  
 table {
     width: 100%;
