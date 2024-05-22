@@ -8,13 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freementlelibrary - Home Page</title>
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="icon" href="../Skill-assessment-WebPage-main/Images/open-book.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style/header.css">
+    <link rel="stylesheet" href="./Style/footer.css">
     <link rel="stylesheet" href="./Style/bookpage.css">
+    <link rel="icon" href="../Skill-assessment-WebPage-main/Images/open-book.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <iframe id="header-iframe" src="./header.html" frameborder="0" scrolling="no"></iframe>
-      </header>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./Images/Logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="main.html" target="_top">Home</a></li>
+          <li><a href="aboutus.html" target="_top">AboutUs</a></li>
+          <li><a href="BookList.html" target="_top">BookList</a></li>
+          <li><a href="login.html" target="_top">Login</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img src="./Images/burger-menu-left-svgrepo-com.svg"></button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+        <ul class="nav-menu">
+          <li><a href="main.html" target="_top">Home</a></li>
+          <li><a href="aboutus.html" target="_top">AboutUs</a></li>
+          <li><a href="BookList.html" target="_top">BookList</a></li>
+          <li><a href="login.html" target="_top">Login</a></li>
+        </ul>
+    </div>
+</header>
     <section id="book-inf">
         <div class="book-img">
             <img src="./Images/1984.jpg" alt="livro1">
@@ -33,13 +58,17 @@
         </div>
         <div class="book-description">
             <h2>1984</h2>
-            <p>The Hobbit by J.R.R. Tolkien is a timeless fantasy novel that takes readers on an unforgettable journey through the enchanting world of Middle-earth. First published in 1937, this classic tale introduces us to Bilbo Baggins, a seemingly ordinary hobbit who lives a quiet life in his comfortable hobbit-hole in the Shire. However, Bilbo’s peaceful existence is upended when the wizard Gandalf and a company of thirteen dwarves, led by Thorin Oakenshield, come to his door seeking a burglar for their adventure.
+            <p>1984 by George Orwell is a dystopian novel set in a totalitarian society ruled by the Party and its leader, Big Brother. The narrative follows Winston Smith, a low-ranking member of the Party who works at the Ministry of Truth, where he falsifies historical records to align the past with the Party's propaganda.
 
-                The dwarves' quest is to reclaim their homeland, the Lonely Mountain, and its vast treasure from the dragon Smaug. Reluctantly, Bilbo joins the expedition, setting off on a perilous journey that challenges him in ways he never imagined. Along the way, the group encounters trolls, goblins, wolves, giant spiders, and elves, each presenting unique dangers and tests of courage.
-                
-                One of the most significant moments in the story occurs when Bilbo finds a mysterious ring in the depths of the goblin tunnels. This seemingly ordinary ring, later revealed to be the One Ring, grants him the power of invisibility. Bilbo uses the ring to great effect, particularly in his encounter with Gollum, a strange and malevolent creature who once possessed the ring. Their game of riddles is a tense and pivotal moment that showcases Bilbo's wit and resourcefulness.
-                
-                As the journey progresses, Bilbo’s character transforms from a hesitant participant into a clever and brave hero. His ingenuity and bravery are crucial in several key moments, including the confrontation with the giant spiders in Mirkwood and the clever negotiation with Smaug. Bilbo's evolution is central to the novel’s theme of self-discovery and personal growth, illustrating how even the most unlikely individuals can rise to greatness.</p>
+              The Party exercises absolute control over every aspect of life in Oceania, using surveillance, censorship, and propaganda to maintain power. The Thought Police monitor citizens for any sign of dissent or nonconformity, and even thinking rebellious thoughts is considered a crime, known as "thoughtcrime."
+              
+              Winston becomes increasingly disillusioned with the Party and begins to secretly rebel. He starts a forbidden love affair with Julia, a coworker who shares his hatred for the Party. They seek temporary refuge in a rented room above an antique shop, believing it to be a safe haven from surveillance. However, their rebellion is short-lived; they are betrayed by the shop owner, who is actually an informant for the Thought Police.
+              
+              Winston and Julia are arrested and taken to the Ministry of Love, where they undergo brutal interrogation and torture. O'Brien, a high-ranking Party member whom Winston had mistakenly believed to be part of an underground resistance, personally oversees Winston's re-education. O'Brien reveals the Party's philosophy: the pursuit of power for its own sake, maintaining control through the manipulation of truth and the eradication of individual thought.
+              
+              Under severe torture, Winston eventually betrays Julia, succumbing to the Party's power. His spirit broken, Winston is released back into society. He becomes a shell of his former self, completely loyal to Big Brother. The novel ends with Winston’s complete submission and love for Big Brother, highlighting the terrifying extent of the Party's control over the human mind and the crushing of individual freedom and resistance.
+              
+              1984 serves as a powerful warning about the dangers of totalitarianism, the erosion of truth, and the loss of personal autonomy.</p>
     </section>
     <div class="line"></div>
     <section id="reviews">
@@ -55,7 +84,7 @@
                 </div>
              </form>                                                                                                                                                                                 
     </section>
-    <div class="container">
+    <div class="container-review">
         <h2>Reviews for "Five Wishes"</h2>
         <div class="review">
             <p class="author">John Doe</p>
@@ -95,8 +124,39 @@
         </div>
     </div>
     <footer>
-        <iframe class="footer-stand" src="./footer.html" frameborder="0"></iframe>
-    </footer>
+        <div class="footer-container">
+          <div class="inf-a-side">
+            <p>151 Hidh St, Freementle WA 6160 Australia</p>
+            <p>Monday to Friday 8AM to 5PM</p>
+            <P>251/255 Stirling St, Perth WA 6000</P>
+            <P>+61 8 6269 2300</P>
+          </div>
+          <div class="line">
+          </div>
+          <div class="inf-b-side">
+            <p>https://www.freementlelibrary.com.au/</p>
+            <p>freementlelibrary@autralia.com.au</p>
+            <div class="socialmedia">
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/Facebook.png" alt="Facebook Icon"></a>
+              </div>
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/Instagram.png" alt="Instagram Icon"></a>
+              </div>
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/Twitter Circled.png" alt="Twitter Icon"></a>
+              </div>
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/WhatsApp.png" alt="Whatsapp Icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Designed by Luis Filipe Gomes - All rights reserved Copyright ©</p>
+        </div>
+      </footer>
     <script src="../script/script.js"></script>
+    <script src="../script/menu-burguer.js"></script>
 </body>
 </html>

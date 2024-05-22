@@ -8,13 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freementlelibrary - Home Page</title>
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="icon" href="../Skill-assessment-WebPage-main/Images/open-book.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style/header.css">
+    <link rel="stylesheet" href="./Style/footer.css">
     <link rel="stylesheet" href="./Style/bookpage.css">
+    <link rel="icon" href="../Skill-assessment-WebPage-main/Images/open-book.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <iframe id="header-iframe" src="./header.html" frameborder="0" scrolling="no"></iframe>
-      </header>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./Images/Logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="main.html" target="_top">Home</a></li>
+          <li><a href="aboutus.html" target="_top">AboutUs</a></li>
+          <li><a href="BookList.html" target="_top">BookList</a></li>
+          <li><a href="login.html" target="_top">Login</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img src="./Images/burger-menu-left-svgrepo-com.svg"></button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+        <ul class="nav-menu">
+          <li><a href="main.html" target="_top">Home</a></li>
+          <li><a href="aboutus.html" target="_top">AboutUs</a></li>
+          <li><a href="BookList.html" target="_top">BookList</a></li>
+          <li><a href="login.html" target="_top">Login</a></li>
+        </ul>
+    </div>
+</header>
     <section id="book-inf">
         <div class="book-img">
             <img src="./Images/the-great-gatsby-9781471195129_hr.jpg" alt="livro1">
@@ -33,13 +58,17 @@
         </div>
         <div class="book-description">
             <h2>The Great Gatsby</h2>
-            <p>The Hobbit by J.R.R. Tolkien is a timeless fantasy novel that takes readers on an unforgettable journey through the enchanting world of Middle-earth. First published in 1937, this classic tale introduces us to Bilbo Baggins, a seemingly ordinary hobbit who lives a quiet life in his comfortable hobbit-hole in the Shire. However, Bilbo’s peaceful existence is upended when the wizard Gandalf and a company of thirteen dwarves, led by Thorin Oakenshield, come to his door seeking a burglar for their adventure.
+            <p>"The Great Gatsby" by F. Scott Fitzgerald is a classic American novel set in the 1920s. It tells the story of Jay Gatsby, a wealthy and enigmatic man who throws extravagant parties in hopes of reuniting with his lost love, Daisy Buchanan. The story is narrated by Nick Carraway, a Yale graduate and World War I veteran, who rents a house next to Gatsby's mansion in West Egg, Long Island.
 
-                The dwarves' quest is to reclaim their homeland, the Lonely Mountain, and its vast treasure from the dragon Smaug. Reluctantly, Bilbo joins the expedition, setting off on a perilous journey that challenges him in ways he never imagined. Along the way, the group encounters trolls, goblins, wolves, giant spiders, and elves, each presenting unique dangers and tests of courage.
-                
-                One of the most significant moments in the story occurs when Bilbo finds a mysterious ring in the depths of the goblin tunnels. This seemingly ordinary ring, later revealed to be the One Ring, grants him the power of invisibility. Bilbo uses the ring to great effect, particularly in his encounter with Gollum, a strange and malevolent creature who once possessed the ring. Their game of riddles is a tense and pivotal moment that showcases Bilbo's wit and resourcefulness.
-                
-                As the journey progresses, Bilbo’s character transforms from a hesitant participant into a clever and brave hero. His ingenuity and bravery are crucial in several key moments, including the confrontation with the giant spiders in Mirkwood and the clever negotiation with Smaug. Bilbo's evolution is central to the novel’s theme of self-discovery and personal growth, illustrating how even the most unlikely individuals can rise to greatness.</p>
+              Nick learns that Gatsby, originally James Gatz from North Dakota, reinvented himself to escape his impoverished past. Gatsby and Daisy had a brief romantic relationship during World War I, but she married Tom Buchanan, a wealthy and arrogant man. Gatsby's wealth and lavish lifestyle are part of his effort to win Daisy back.
+              
+              Throughout the novel, Gatsby's obsession with Daisy leads him to make increasingly desperate attempts to rekindle their romance. Daisy, however, is torn between her loyalty to Tom and her feelings for Gatsby. Tom, aware of Gatsby's intentions, reveals Gatsby's dubious business dealings in an attempt to discredit him.
+              
+              Tragedy strikes when Daisy, driving Gatsby's car, accidentally kills Myrtle Wilson, Tom's mistress. Gatsby takes the blame to protect Daisy. Myrtle's husband, George Wilson, believing Gatsby to be responsible for his wife's death, fatally shoots Gatsby before killing himself.
+              
+              In the aftermath, Gatsby's dream of a future with Daisy crumbles. Daisy and Tom retreat into their world of wealth and privilege, leaving Nick disillusioned. He organizes Gatsby's funeral, which is sparsely attended, highlighting the emptiness of Gatsby's life despite his riches.
+              
+              Nick returns to the Midwest, reflecting on the moral decay and superficiality of the East Coast elite. "The Great Gatsby" explores themes of idealism, social change, and the American Dream's corruption. Gatsby's tragic end underscores the novel's critique of the pursuit of wealth and status at the expense of genuine human connections and moral integrity.</p>
     </section>
     <div class="line"></div>
     <section id="reviews">
@@ -55,7 +84,7 @@
                 </div>
              </form>                                                                                                                                                                                 
     </section>
-    <div class="container">
+    <div class="container-review">
         <h2>Reviews for "Five Wishes"</h2>
         <div class="review">
             <p class="author">John Doe</p>
@@ -95,8 +124,39 @@
         </div>
     </div>
     <footer>
-        <iframe class="footer-stand" src="./footer.html" frameborder="0"></iframe>
-    </footer>
+        <div class="footer-container">
+          <div class="inf-a-side">
+            <p>151 Hidh St, Freementle WA 6160 Australia</p>
+            <p>Monday to Friday 8AM to 5PM</p>
+            <P>251/255 Stirling St, Perth WA 6000</P>
+            <P>+61 8 6269 2300</P>
+          </div>
+          <div class="line">
+          </div>
+          <div class="inf-b-side">
+            <p>https://www.freementlelibrary.com.au/</p>
+            <p>freementlelibrary@autralia.com.au</p>
+            <div class="socialmedia">
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/Facebook.png" alt="Facebook Icon"></a>
+              </div>
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/Instagram.png" alt="Instagram Icon"></a>
+              </div>
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/Twitter Circled.png" alt="Twitter Icon"></a>
+              </div>
+              <div class="sm-icon">
+                <a href="#"><img src="./Images/WhatsApp.png" alt="Whatsapp Icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Designed by Luis Filipe Gomes - All rights reserved Copyright ©</p>
+        </div>
+      </footer>
     <script src="../script/script.js"></script>
+    <script src="../script/menu-burguer.js"></script>
 </body>
 </html>

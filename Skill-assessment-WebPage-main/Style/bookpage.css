@@ -3,20 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
-#header-iframe{
-    width: 100% !important;
-    height: 100% !important;
-  }
+
 
 #book-inf{
     width: 95vw;
     height: auto;
     padding-top: 50px;
     text-align: center;
+    display: flex;
+}
 
-}.book-img{
+
+
+.book-img{
     width: 48%;
 }
+
+.book-img img{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 7px 7px 15px 0 rgba(0,0,0,0.49);
+    
+}
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+}
+
+.devs{
+    display: flex; 
+    justify-content: center;
+}
+
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 20px 20px;
+  }
+  .card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .card-desc{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+
+
+.video-aboutus{
+    width: 48%;
+}
+
+.video-aboutus iframe{
+    border: 1px solid black;
+    box-shadow: 7px 7px 15px 0 rgba(0,0,0,0.49);
+}
+
 
 .book-img img{
     width: 300px;
@@ -56,6 +110,11 @@
     text-align: center;
 }
 
+.video-description{
+    width: 52%;
+    text-align: center;
+}
+
 .book-description h2{
     padding-bottom: 20px;
     font-style: italic;
@@ -67,12 +126,6 @@
     margin: 10px 40px;
 }
 
-.line{
-    margin-top: 50px;
-    height: 1px;
-    width: 100%;
-    background-color: #333;
-}
 
 .title-review{
     margin-bottom: 20px;
@@ -128,7 +181,7 @@ input#text{
     background-color: #f9f9f9;
 }
 
-.container {
+.container-review {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -164,3 +217,84 @@ input#text{
     margin-top: 5px;
 }
 
+@media screen and (max-width: 1260px) {
+    .best-sellers{
+      display: inline-flex; 
+      flex-wrap: wrap;
+      margin: 20px auto;
+      justify-content: space-around;
+    }
+  
+    article{
+      display: block;
+    }
+  
+    .article-contend{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .benefits-list{
+      margin: 15px;
+    }
+  
+    .benefits-list li{
+      font-size: 14pt;
+      margin: 10px;
+      text-align: left;
+    }
+  
+    .benefits-list p strong{
+      padding-bottom: 30px;
+    }
+  
+    section{
+      margin: 0;
+    }
+
+    #book-inf{
+        display: block;
+    }
+
+    .book-img{
+        width: 100%;
+    }
+
+    .book-description{
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutus{
+        display: block;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .video-aboutus{
+        width: 100%;
+    }
+    
+    .video-aboutus iframe{
+        width: 90%;
+        margin: 3px 3px;
+        border: 1px solid black;
+        box-shadow: 7px 7px 15px 0 rgba(0,0,0,0.49);
+    }
+
+    article .devs{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .devs{
+        display: block;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+}

@@ -8,14 +8,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freementlelibrary - Home Page</title>
     <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/header.css">
+    <link rel="stylesheet" href="./Style/footer.css">
+    <link rel="stylesheet" href="./Style/bookpage.css">
     <link rel="icon" href="../Skill-assessment-WebPage-main/Images/open-book.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <iframe id="header-iframe" src="./header.html" frameborder="0" scrolling="no"></iframe>
-      </header>
-    <footer>
-        <iframe class="footer-stand" src="./footer.html" frameborder="0"></iframe>
-    </footer>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./Images/Logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="main.html" target="_top">Home</a></li>
+          <li><a href="aboutus.html" target="_top">AboutUs</a></li>
+          <li><a href="BookList.html" target="_top">BookList</a></li>
+          <li><a href="login.html" target="_top">Login</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img src="./Images/burger-menu-left-svgrepo-com.svg"></button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+        <ul class="nav-menu">
+          <li><a href="main.html" target="_top">Home</a></li>
+          <li><a href="aboutus.html" target="_top">AboutUs</a></li>
+          <li><a href="BookList.html" target="_top">BookList</a></li>
+          <li><a href="login.html" target="_top">Login</a></li>
+        </ul>
+    </div>
+</header>
+<section class="aboutus">
+  <section id="video-inf">
+    <div class="video-aboutus">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mbCJqdrzwcE?si=FqNxiFgjLFdRw2nS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-description">
+        <h2>About Us</h2>
+        <p>Located in the heart of Fremantle, Western Australia, Fremantle Library stands as a beacon of learning, culture, and community engagement. Since our establishment in [year], we have been dedicated to fostering a love of reading, lifelong learning, and connection within our vibrant coastal city.
+
+          At Fremantle Library, we pride ourselves on our extensive collection of books, periodicals, digital resources, and multimedia materials catering to readers of all ages and interests. Whether you're seeking the latest bestseller, conducting research for a project, or exploring local history, our knowledgeable staff is here to assist you in finding the perfect resources to meet your needs.
+          
+          But Fremantle Library is more than just a repository of books. We serve as a dynamic hub for community events, workshops, and activities aimed at enriching the lives of our patrons. From author talks and book clubs to children's storytime sessions and educational workshops, there's always something exciting happening at our library.
+          
+          We understand the importance of accessibility and inclusivity in our community, which is why we offer a range of services and programs designed to meet the diverse needs of our patrons. Whether you're a student, a parent, a senior citizen, or a newcomer to Fremantle, you'll find a welcoming space and a wealth of resources at Fremantle Library.
+          
+          As stewards of knowledge and champions of literacy, we are committed to empowering individuals, inspiring creativity, and building connections that transcend generations. Join us at Fremantle Library, where the joy of discovery awaits around every corner. Together, let's write the next chapter in Fremantle's rich cultural legacy.</p>
+</section>
+<div class="card-desc">
+  <h2>Our Team of Developers</h2>
+</div>
+<article class="devs">
+  <div class="card">
+    <img src="./Images/dev1.avif" alt="Developer">
+    <h2>Luis Filipe</h2>
+    <p>Nationality: Brazilian</p>
+  </div>
+  <div class="card">
+    <img src="./Images/dev2.webp" alt="Developer">
+    <h2>Gustavo Kuhn</h2>
+    <p>Nationality: German</p>
+  </div>
+  <div class="card">
+    <img src="./Images/dev3.webp" alt="Developer">
+    <h2>Michael Meyers</h2>
+    <p>Nationality: American</p>
+  </div>
+</article>
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="inf-a-side">
+      <p>151 Hidh St, Freementle WA 6160 Australia</p>
+      <p>Monday to Friday 8AM to 5PM</p>
+      <P>251/255 Stirling St, Perth WA 6000</P>
+      <P>+61 8 6269 2300</P>
+    </div>
+    <div class="line">
+    </div>
+    <div class="inf-b-side">
+      <p>https://www.freementlelibrary.com.au/</p>
+      <p>freementlelibrary@autralia.com.au</p>
+      <div class="socialmedia">
+        <div class="sm-icon">
+          <a href="#"><img src="./Images/Facebook.png" alt="Facebook Icon"></a>
+        </div>
+        <div class="sm-icon">
+          <a href="#"><img src="./Images/Instagram.png" alt="Instagram Icon"></a>
+        </div>
+        <div class="sm-icon">
+          <a href="#"><img src="./Images/Twitter Circled.png" alt="Twitter Icon"></a>
+        </div>
+        <div class="sm-icon">
+          <a href="#"><img src="./Images/WhatsApp.png" alt="Whatsapp Icon"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Designed by Luis Filipe Gomes - All rights reserved Copyright ©</p>
+  </div>
+</footer>
 </body>
+<script src="../script/script.js"></script>
+    <script src="../script/menu-burguer.js"></script>
 </html>
