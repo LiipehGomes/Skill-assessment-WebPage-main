@@ -11,10 +11,15 @@
  
 table {
     width: 100%;
+    max-width: 100wv;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
 
+.myTable{
+    overflow-x: auto;
+    overflow: scroll;
+}
 
 th {
     background-color: #f2f2f2;
@@ -58,6 +63,10 @@ td a:hover {
 
 .table{
     display: block;
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: auto;
 }
 
 .table h2{
