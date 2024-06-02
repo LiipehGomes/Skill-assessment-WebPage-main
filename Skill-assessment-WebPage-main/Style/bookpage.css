@@ -79,6 +79,17 @@
     margin: 10px 40px;
 }
 
+.bttn-back-list{
+    text-align: right;
+    padding: 10px 10px 0 0 ;
+    opacity: 0;
+}
+
+.bttn-back-list img{
+    max-width: 40px;
+    width: 40px;
+}
+
 
 .title-review{
     margin-bottom: 20px;
@@ -143,6 +154,12 @@ input#text{
     background-color: #f9f9f9;
     display: block;
 }
+
+.container-review h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .review {
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
@@ -170,12 +187,16 @@ input#text{
     margin-top: 5px;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 680px) {
     .best-sellers{
       display: inline-flex; 
       flex-wrap: wrap;
       margin: 20px auto;
       justify-content: space-around;
+    }
+
+    .bttn-back-list{
+        opacity: 1;
     }
   
     article{
